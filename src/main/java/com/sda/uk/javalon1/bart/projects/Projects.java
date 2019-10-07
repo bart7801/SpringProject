@@ -3,7 +3,9 @@ package com.sda.uk.javalon1.bart.projects;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = {"com.sda.uk.javalon1.bart.projects.online_movies_rental"})
+@SpringBootApplication(scanBasePackages = {
+        "com.sda.uk.javalon1.bart.projects.online_movies_rental",
+        "com.sda.uk.javalon1.bart.projects.pokemon"})
 
 public class Projects {
 
