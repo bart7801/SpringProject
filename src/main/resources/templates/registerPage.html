@@ -1,18 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
 <html xmlns="http://www.w3.org/1999/xhtml"
->
-
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/showMovies.css">
 </head>
 <body>
-<form action="#">
 
-    Username<input type="text">
-    Password<input type="password">
-    <input type="submit">
+<div class="container" style="max-width: 600px">
+    <form action="#" th:object="${newUser}" method="post" th:action="@{/registerAction}">
+        <input type="text" th:field="*{username}">
+        <input type="password" th:field="*{password}">
+        <input type="submit">
+    </form>
+</div>
 
-</form>
+<th:if/>
+
+<div class="container" style="max-width: 600px">
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+
 </body>
 </html>

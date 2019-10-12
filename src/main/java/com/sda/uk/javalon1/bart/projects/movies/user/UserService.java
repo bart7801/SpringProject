@@ -4,6 +4,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class UserService {
 
@@ -19,10 +21,14 @@ public class UserService {
 
     }
 
-    public String saveUser(UserDTO userToSave) {
-        //TODO sprawdz czy uzytkownik z takim loginem juz istnieje
+    public Optional<String> saveUser(UserDTO userToSave) {
+
+        if (userRepository.existsByUsername(userToSave.getUsername())) {
+            return Optional.empty();
+        }
+
         UserDocument userDocumentToSave = modelMapper.map(userToSave, UserDocument.class);
         UserDocument savedUserDocument = userRepository.save(userDocumentToSave);
-        return savedUserDocument.getId();
+        return Optional.of(savedUserDocument.getId());
     }
 }

@@ -5,6 +5,12 @@ public class UserDTO {
     private String username;
     private String password;
 
+    public UserDTO(String id, String username, String password) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+    }
+
     public UserDTO() {
     }
 
@@ -29,12 +35,6 @@ public class UserDTO {
     }
 
     public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public UserDTO(String id, String username, String password) {
-        this.id = id;
-        this.username = username;
         this.password = password;
     }
 }
