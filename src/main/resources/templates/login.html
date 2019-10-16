@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Sign In/Sign Up</title>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://polishtvcompany.com/media/css_secure/2d5f5ce0582d6bb85dcbeb1fe44576df.css" media="all"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://polishtvcompany.com/media/css_secure/bc0138b5381bf6ad44bad2f6b45e2d50.css" media="print"/>
+    <script type="text/javascript"
+            src="https://polishtvcompany.com/media/js/9d3559843d63ceaf5a9ce2f0a8287a3c.js"></script>
+
+</head>
+
+<body class=" customer-account-login">
+
+<!--<div class="fullsizeWrap">-->
+
+<div class="wrapper">
+    <div class="wrapper-tail">
+        <p id="back-top"><a href="#top"><span></span></a></p>
+        <div class="auth-page">
+            <div class="main-container col1-layout border-shadow auth-container new-popup-like">
+                <noscript>
+                    <div class="global-site-notice noscript">
+                        <div class="notice-inner">
+                            <p>
+                                <strong>JavaScript seems to be disabled in your browser.</strong><br/>
+                                You must have JavaScript enabled in your browser to utilize the functionality of this
+                                website. </p>
+                        </div>
+                    </div>
+                </noscript>
+                <div class="main">
+                    <div class="col-main">
+
+                        <script type="text/javascript">
+                            var name_gaid = 'usergaid';
+                            var is_exist = Mage.Cookies.get(name_gaid);
+
+                            Mage.Cookies.clear(name_gaid);
+                        </script>
+                        <div class="page-title">
+                            <h1>Sign In to Account</h1>
+                            <div class="display-table-cell2">
+                                <span class="float-left auth-title-or">or</span>
+                                <a title="Create an Account"
+                                   onclick="window.location='https://polishtvcompany.com/customer/account/create/';">Register</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="esti-auth-form-body">
+                                <!--        <div class="esti-auth-inner-left">-->
+                                <form action="https://polishtvcompany.com/customer/account/loginPost" method="post"
+                                      id="login-form">
+                                    <ul class="form-list">
+                                        <li class="fields">
+                                            <div class="field">
+                                                <label for="email" class="required"><em>*</em>Email Address</label>
+                                                <div class="input-box">
+                                                    <input style="" type="text" name="login[username]" value=""
+                                                           id="email"
+                                                           class="input-text required-entry validate-email form-control"
+                                                           title="Email Address" placeholder="Email*">
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="fields">
+                                            <div class="field">
+                                                <label for="pass" class="required"><em>*</em>Password</label>
+                                                <div class="input-box">
+                                                    <input style="" type="password" name="login[password]"
+                                                           class="input-text required-entry validate-password form-control"
+                                                           id="pass" title="Password" placeholder="Password*">
+                                                    <div class="password-switch">
+                                                        <span class="icon-eye password"></span>
+                                                        <input type="checkbox" class="switch-pass" data-toggle="tooltip"
+                                                               title="" data-original-title="Show Password"
+                                                               style="display: none;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--                            -->
+                                        </li>
+                                        <li id="remember-me-box" class="control">
+                                            <div class="input-box">
+                                                <input type="checkbox" name="persistent_remember_me" class="checkbox"
+                                                       id="remember_meYYk1q5fV5x" checked="checked" title="Remember Me">
+                                            </div>
+                                            <label for="remember_meYYk1q5fV5x">Remember Me</label>
+                                        </li>
+
+                                        <script type="text/javascript">
+                                            //<![CDATA[
+                                            function toggleRememberMepopup(event) {
+                                                if ($('remember-me-popup')) {
+                                                    var viewportHeight = document.viewport.getHeight(),
+                                                        docHeight = $$('body')[0].getHeight(),
+                                                        height = docHeight > viewportHeight ? docHeight : viewportHeight;
+                                                    $('remember-me-popup').toggle();
+                                                    $('window-overlay').setStyle({height: height + 'px'}).toggle();
+                                                }
+                                                Event.stop(event);
+                                            }
+
+                                            document.observe("dom:loaded", function () {
+                                                new Insertion.Bottom($$('body')[0], $('window-overlay'));
+                                                new Insertion.Bottom($$('body')[0], $('remember-me-popup'));
+
+                                                $$('.remember-me-popup-close').each(function (element) {
+                                                    Event.observe(element, 'click', toggleRememberMepopup);
+                                                })
+                                                $$('#remember-me-box a').each(function (element) {
+                                                    Event.observe(element, 'click', toggleRememberMepopup);
+                                                });
+                                            });
+                                            //]]>
+                                        </script>
+
+                                    </ul>
+                                    <div class="right_align">
+                                        <a href="https://polishtvcompany.com/customer/account/forgotpassword/"
+                                           class="f-left">Forgot Your Password?</a>
+                                    </div>
+                                    <div class="buttons-set">
+                                        <input type="submit" class="btn btn-primary" value="Sign In" title="Sign In"
+                                               name="send" id="send2">
+                                    </div>
+                                </form>
+                                <!--        </div>-->
+                                <!--        <div class="esti-auth-inner-right">-->
+                                <div>
+                                    <div class="le-socialconnect-social">
+                                        <p>You can login using your social network account.</p>
+                                        <div class="le-social-button-login">
+                                            <button class="ico-fb le-icon-social service " title="Connect with Facebook"
+                                                    onclick="showLESocialPopup('https://polishtvcompany.com/le_sociallogin/facebook/request/mainw_protocol/https/', 500, 270);">
+                                                <span class="logo"></span>Connect with Facebook
+                                            </button>
+
+                                            <button class="ico-go le-icon-social service " title="Connect with Google"
+                                                    onclick="showLESocialPopup('https://polishtvcompany.com/le_sociallogin/google/request/mainw_protocol/https/', 700, 500);">
+                                                <span class="logo"></span>Connect with Google
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--        </div>-->
+                            </div>
+                        </div>
+                        <style>
+                            .input-box {
+                                position: relative;
+                            }
+
+                            input[type=checkbox] {
+                                margin: 0 2px 0 0;
+                                vertical-align: middle;
+                                width: auto;
+                            }
+
+                            .checkText {
+                                font-size: 14px;
+                                color: #6d6d6d;
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                            #remember-me-box {
+                                margin-top: 15px;
+                            }
+
+                            #remember-me-box .input-box {
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+
+                            #remember-me-box label {
+                                display: inline-block;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                            }
+
+                            #remember-me-box a.link-tip {
+                                display: none;
+                            }
+                        </style>
+
+                        <script type="text/javascript">
+                            //<![CDATA[
+                            var loginForm = new VarienForm('login-form', true);
+
+                            function processForm(e) {
+                                if (loginForm.validator.validate()) {
+                                    $(send2).disable();
+                                    $(send2).setValue('Please wait...');
+                                }
+                                return false;
+                            }
+
+                            var form = document.getElementById('login-form');
+
+                            if (form.attachEvent) {
+                                form.attachEvent("submit", processForm);
+                            } else {
+                                form.addEventListener("submit", processForm);
+                            }
+                            //]]>
+
+                            $j(".switch-pass").change(function () {
+                                var $x = $j(this).closest(".input-box").children(":first");
+                                if ($x.attr('type') === "password") {
+                                    $x.attr('type', 'text');
+                                    $j(this).attr('data-original-title', 'Hide password').prev().removeClass('password').addClass('text');
+                                } else {
+                                    $x.attr('type', 'password');
+                                    $j(this).attr('data-original-title', 'Show password').prev().removeClass('text').addClass('password');
+                                }
+                            });
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="align-center auth-page-back-wrap">
+                <a class="auth-page-back-link" href="https://polishtvcompany.com/">&lt; Back to website</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="remember-me-popup" class="remember-me-popup" style="display:none;">
+    <div class="remember-me-popup-head">
+        <h3>What's this?</h3>
+        <a href="#" class="remember-me-popup-close" title="Close">Close</a>
+    </div>
+    <div class="remember-me-popup-body">
+        <p>Checking "Remember Me" will let you access your shopping
+            cart on this computer when you are logged out</p>
+        <div class="remember-me-popup-close-button a-right">
+            <a href="#" class="remember-me-popup-close button" title="Close"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

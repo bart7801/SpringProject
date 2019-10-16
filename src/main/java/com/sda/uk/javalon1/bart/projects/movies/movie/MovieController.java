@@ -8,10 +8,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
 public class MovieController {
+    public static final String LAST_SEARCH_QUERY = "lastSearchQuery";
+
     private final MoviesProvider moviesProvider;
 
     public MovieController(@Autowired MoviesProvider moviesProvider) {
@@ -30,9 +33,10 @@ public class MovieController {
 
     @PostMapping
     @RequestMapping("/searchMoviesAction")
-    public String searchMovies(@ModelAttribute SearchQuery searchQuery, Model model) {
+    public String searchMovies(@ModelAttribute SearchQuery searchQuery, Model model, HttpSession httpSession) {
         List<Movie> movies = moviesProvider.getMovies(searchQuery.getQuery());
         model.addAttribute("movies", movies);
+        httpSession.setAttribute(LAST_SEARCH_QUERY, searchQuery.getQuery());
         return "showMoviesPage";
     }
 

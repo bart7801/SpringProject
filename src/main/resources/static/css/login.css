@@ -1,0 +1,130 @@
+body {
+    background-color: #98ff67;
+}
+
+/*------------------------------ COLOR #1 -----------------------------------*/
+body a, body a:active:hover, #myCall .btn,
+body .btn-default, body .btn-default:active:hover,
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover,
+.btn-default:active.focus, .btn-default:active:focus,
+.agent_home_2 h2, .agent_home_3 .container p,
+.agent_home_3 .container, .agent_home_3 h2,
+.on-material-icons-checkbox .material-icons,
+.category-help table.grid .grid-header,
+button.button-blue,
+.home-registration-wrapper h2,
+.agent_home_5 h3, table.grid h2.tdh2,
+.product-options-radio .main-product-options label span,
+.agent_theme_color1, #fdb_error {
+    color: #d6001c;
+}
+
+body .btn-primary,
+body .btn-primary:active:hover,
+body .btn-primary:active:focus,
+.agent-home-register, body.cms-speed-test .ptv-button,
+.agent_home_4, .button-color1,
+.agent_home_5 .product-subtitle1,
+.agent_home_5 .product-subtitle2,
+.agent_home_5 .product-subtitle3,
+.agent_home_7, .agent_home_5 .button-blue a,
+.cms-dealer .button-std.button-color2,
+#feedback #formdiv, #feedback input[type="text"], #feedback textarea,
+.agent-home-register #referral > option,
+.button-video .button-blue:first-child{
+    background: #d6001c;
+}
+
+body.cms-speed-test .ptv-button:hover,
+.button-color1:hover,
+    /*.button-blue a:hover,
+    a.button-blue:hover, button.button-blue:hover,
+    .agent_home_5 .button-blue a:hover*/
+body .btn-primary:active,
+body .btn-primary:focus,
+body .btn-primary:hover,
+.button-video .button-blue:first-child:hover{
+    background: #da1a33;
+}
+
+body .btn, body .btn-default, body .btn-default:active:hover,
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover,
+.btn-default:active.focus, .btn-default:active:focus,
+body .btn-primary:active:focus, a.download-button,
+.cms-dealer .button-std.button-color2, body.cms-speed-test .ptv-button,
+button.button-blue, .button-blue {
+    border-color: #d6001c;
+}
+
+body a:hover, body a:focus, body a:active,
+body .btn-default:active,
+body .btn-default:focus,
+body .btn-default:hover,
+    /*.button-video .button-blue:last-child:hover,*/
+#feedback_holder.button-blue:hover,
+#seeall.button-blue:hover{
+    color: #da1a33;
+}
+
+body .btn-primary:active:hover,
+body .btn-default:active, body .btn-default:focus, body .btn-default:hover,
+body .btn:hover, body .btn:focus, body .btn:active,
+.button-video .button-blue:hover,
+#feedback_holder.button-blue:hover,
+#seeall.button-blue:hover{
+    border-color: #da1a33;
+}
+
+.select-period-item.active .wrapper-period {
+    border: 3px solid #da1a33;
+    padding: 0;
+}
+
+/*------------------------------ COLOR #2 -----------------------------------*/
+.dropdown .dropdown-content .dropdown-login-buttons .button-std:active,
+.dropdown .dropdown-content .dropdown-login-buttons .button-std:focus,
+.button-color2 {
+    background: #64cbee;
+}
+
+.top-links ul li a.button-color2:hover,
+.button-color2:hover {
+    background: #5ebfe0;
+}
+
+/*------------------------------ COLOR #3 -----------------------------------*/
+body.home-page .header,
+.header.back, #footer2,
+.webplayer .background_color,
+.dropdown-bg, .dropdown-bg-demo,
+.header.top-pop,
+.dropdown_div .signout{
+    background: #313638;
+}
+
+.user-exposed-menu a,
+.close_dropdown_div i,
+.dropdown_div .main_point span{
+    color: #313638;
+}
+@media (max-width: 768px){
+    .header.top-pop.default.navbar.navbar-fixed-top.top-menu-active{
+        background: #313638 !important;
+    }
+    .navbar-collapse{
+        background: #d6001c;
+    }
+}
+#request-refund-popup label>input[type=checkbox]:checked:before{
+    color: #d6001c;
+}
+/* drop down */
+.dropdown-bg, .dropdown-bg-demo {
+    background-color: #313638;
+}
+.dropdown-bg:before, .dropdown-bg-demo:before {
+    border-color: transparent transparent #313638 transparent;
+}
+.webplayer .background_color{
+    background-color: #313638;
+}

@@ -4,6 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -30,5 +31,9 @@ public class UserService {
         UserDocument userDocumentToSave = modelMapper.map(userToSave, UserDocument.class);
         UserDocument savedUserDocument = userRepository.save(userDocumentToSave);
         return Optional.of(savedUserDocument.getId());
+    }
+
+    public List<UserDocument> getAllUsers() {
+        return userRepository.findAll();
     }
 }
